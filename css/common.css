@@ -1,0 +1,43 @@
+body {
+  background-color: #000;
+  font-family: "Pretendard Variable", sans-serif;
+  word-break: keep-all;
+  padding: 80px 0;
+}
+.btn {
+  max-width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 20px;
+  margin: 0 auto 35px;
+  transition: 0.1s;
+}
+.btn-green {
+  background-color: #32bfa1;
+  box-shadow: 0 14px 0 #299a82;
+  color: #fff;
+}
+.btn-green:active {
+  box-shadow: 0 4px 0 #299a82;
+  transform: translateY(10px);
+}
+.btn-start {
+  background-color: #f2f4f6;
+  box-shadow: 0 14px 0 #dfe1e2;
+  color: #444;
+}
+.btn-start:active {
+  box-shadow: 0 4px 0 #dfe1e2;
+  transform: translateY(10px);
+}
+span {
+  text-decoration: underline;
+}

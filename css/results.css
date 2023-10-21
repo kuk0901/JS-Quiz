@@ -1,0 +1,21 @@
+.result {
+  border: 4px double #fff;
+  border-radius: 16px;
+  margin-bottom: 240px;
+}
+.page-title {
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  margin: 40px 0;
+}
+.result-score {
+  font-size: 45px;
+  text-align: center;
+  color: #fff;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+.btn-green {
+  margin-top: 50px;
+}
