@@ -20,7 +20,7 @@ export const questions = [
       { text: "(function () {})()", value: "X" },
       { text: "(() => {})()", value: "X" },
       { text: "+ function () {}()", value: "X" },
-      { text: "+ function () {}()", value: "O" }
+      { text: "- function () {}()", value: "O" }
     ]
   },
   {
