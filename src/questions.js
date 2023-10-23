@@ -1,4 +1,4 @@
-import { questions } from "./data.js";
+import { questions, resultScores } from "./data.js";
 
 const numberEl = document.querySelector(".number");
 const questionEl = document.querySelector(".question");
@@ -8,7 +8,7 @@ const choice3El = document.querySelector(".choice3");
 const choice4El = document.querySelector(".choice4");
 
 let currentNumber = 0;
-let resultScore = "";
+let resultScore = 0;
 
 function renderQuestion() {
   const question = questions[currentNumber];
@@ -21,12 +21,14 @@ function renderQuestion() {
 }
 
 function nextQuestion(choiceNumber) {
-  if (currentNumber === questions.length) {
+  const question = questions[currentNumber];
+  resultScore += question.choices[choiceNumber].value;
+
+  if (currentNumber === questions.length - 1) {
     showResultPage();
     return;
   }
-  const question = questions[currentNumber];
-  resultScore += question.choices[choiceNumber].value;
+
   currentNumber += 1;
   renderQuestion();
 }

@@ -2,7 +2,7 @@ body {
   background-color: #000;
   font-family: "Pretendard Variable", sans-serif;
   word-break: keep-all;
-  padding: 80px 0;
+  margin: 60px 0;
 }
 .btn {
   max-width: 500px;
